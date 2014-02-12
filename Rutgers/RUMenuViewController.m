@@ -31,10 +31,11 @@
 }
 
 - (void) tableView:(UITableView *) tableview didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 1 || indexPath.row == 2) {
+    if (indexPath.row == 1 || indexPath.row == 2 || indexPath.row == 3) {
         NSString * url = @"http://google.com";
         if (indexPath.row == 1) url = @"http://my.rutgers.edu";
         else if (indexPath.row == 2) url = @"http://sakai.rutgers.edu";
+        else if (indexPath.row == 3) url = @"http://libraries.rutgers.edu";
         
         [tableview deselectRowAtIndexPath:indexPath animated:NO];
         TSMiniWebBrowser *webBrowser = [[TSMiniWebBrowser alloc] initWithUrl:[NSURL URLWithString:url]];
@@ -68,7 +69,7 @@
     NSString * title;
     UITableViewCell *cell = [[UITableViewCell alloc] init];
     
-    title = @[@"RU-info", @"myRutgers", @"Sakai"][indexPath.row];
+    title = @[@"RU-info", @"myRutgers", @"Sakai", @"Libraries"][indexPath.row];
     
     cell.textLabel.text = title;
     
@@ -76,7 +77,7 @@
 }
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return 4;
 }
 
 
