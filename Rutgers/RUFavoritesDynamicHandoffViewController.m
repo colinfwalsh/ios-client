@@ -27,7 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.dataSource = [[RUFavoritesDynamicHandoffDataSource alloc] initWithPathComponents:self.pathComponents];
+    //self.dataSource = [[RUFavoritesDynamicHandoffDataSource alloc] initWithPathComponents:self.pathComponents];
 }
 
 - (void)didReceiveMemoryWarning {

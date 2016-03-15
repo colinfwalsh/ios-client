@@ -54,6 +54,13 @@
     self.pullsToRefresh = YES;
 }
 
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [super tableView:tableView didSelectRowAtIndexPath:indexPath];
+    
+    NSLog(@"VIEW SELECTED\t%@", indexPath);
+}
+
 -(NSURL *)sharingURL{
     NSString *type;
     if ([self.item isKindOfClass:[RUBusRoute class]]) {
