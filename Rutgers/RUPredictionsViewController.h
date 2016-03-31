@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "ExpandingTableViewController.h"
 
+#import "RUBusArrival.h"
+#import "RUPredictionsHeaderRow.h"
+#import "RUBusRoute.h"
+#import "RUBusPrediction.h"
+
 @interface RUPredictionsViewController : ExpandingTableViewController
 /**
  *  The predictions view controller is initialized with an item to display.

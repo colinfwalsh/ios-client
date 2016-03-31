@@ -58,7 +58,19 @@
 {
     [super tableView:tableView didSelectRowAtIndexPath:indexPath];
     
-    NSLog(@"VIEW SELECTED\t%@", indexPath);
+    RUPredictionsHeaderRow *clickedItem = [self.dataSource itemAtIndexPath:indexPath];
+    RUBusPrediction *predictions = clickedItem.predictions;
+    
+    NSString *busStopName = clickedItem.title;
+    
+    NSArray *busStopArrivals = predictions.arrivals;
+    
+    for(RUBusArrival *arrival in busStopArrivals) {
+        NSLog(@"%ld\t%\ld", arrival.minutes, arrival.seconds);
+    }
+
+    
+    NSLog(@"VIEW SELECTED\t%@", [self.dataSource itemAtIndexPath:indexPath]);
 }
 
 -(NSURL *)sharingURL{

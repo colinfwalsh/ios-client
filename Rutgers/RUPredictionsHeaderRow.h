@@ -12,6 +12,7 @@
 -(instancetype)init NS_UNAVAILABLE;
 -(instancetype)initWithPredictions:(RUBusPrediction *)predictions forItem:(id)item NS_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly) id item;
+@property (nonatomic, readonly) RUBusPrediction *predictions;
 @property (nonatomic, readonly) BOOL active;
 @property (nonatomic, readonly, copy) NSString *title;
 @property (nonatomic, readonly, copy) NSString *directionTitle;
