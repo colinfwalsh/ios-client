@@ -68,6 +68,7 @@
     for(RUBusArrival *arrival in busStopArrivals) {
         NSLog(@"%ld\t%\ld", arrival.minutes, arrival.seconds);
     }
+    
 
     
     NSLog(@"VIEW SELECTED\t%@", [self.dataSource itemAtIndexPath:indexPath]);
