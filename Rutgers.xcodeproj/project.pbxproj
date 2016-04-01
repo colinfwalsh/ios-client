@@ -33,6 +33,8 @@
 		0490DC9A1B4DB85A00E76EEF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0490DC991B4DB85A00E76EEF /* WebKit.framework */; };
 		0490DCA01B4DC39E00E76EEF /* RUMOTDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490DC9F1B4DC39E00E76EEF /* RUMOTDManager.m */; };
 		049425021B3A07B500BE570C /* RUSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049425011B3A07B500BE570C /* RUSplitViewController.m */; };
+		049A91691CAF113D0095BA5F /* RUBusSubscribeToNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049A91671CAF113D0095BA5F /* RUBusSubscribeToNotificationViewController.m */; };
+		049A916A1CAF113D0095BA5F /* RUBusSubscribeToNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A91681CAF113D0095BA5F /* RUBusSubscribeToNotificationViewController.xib */; };
 		04A1EFD31A5C508300DE0351 /* RUPredictionsBodyRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A1EFC61A5C508300DE0351 /* RUPredictionsBodyRow.m */; };
 		04A1EFD41A5C508300DE0351 /* RUPredictionsBodyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A1EFC81A5C508300DE0351 /* RUPredictionsBodyTableViewCell.m */; };
 		04A1EFD51A5C508300DE0351 /* RUPredictionsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A1EFCA1A5C508300DE0351 /* RUPredictionsDataSource.m */; };
@@ -71,7 +73,6 @@
 		04C937DE1B31CB300055BC03 /* RUDataLoadingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C937DD1B31CB300055BC03 /* RUDataLoadingManager.m */; };
 		04D0856C1B2798E90009E78F /* RUSOCSearchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D0856B1B2798E90009E78F /* RUSOCSearchOperation.m */; };
 		04DE78F21B6C13D700B06B6F /* RUUIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE78F11B6C13D700B06B6F /* RUUIWebViewController.m */; };
-		04E3D3FF1CADD3DE00406625 /* RUBusSubscribeToNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E3D3FE1CADD3DE00406625 /* RUBusSubscribeToNotificationViewController.m */; };
 		6862BA48665649378AC0462B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2127C0710965413FBE553ECA /* libPods.a */; };
 		A70490A119478CB2003B99DC /* RUSportsRosterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A70490A019478CB2003B99DC /* RUSportsRosterViewController.m */; };
 		A70810771906EE6E0087EB82 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A70810761906EE6E0087EB82 /* MapKit.framework */; };
@@ -294,6 +295,9 @@
 		049425011B3A07B500BE570C /* RUSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSplitViewController.m; sourceTree = "<group>"; };
 		049A4CE01B4AFC890006D1FA /* Rutgers Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rutgers Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		049A4CE41B4AFC890006D1FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049A91661CAF113D0095BA5F /* RUBusSubscribeToNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUBusSubscribeToNotificationViewController.h; sourceTree = "<group>"; };
+		049A91671CAF113D0095BA5F /* RUBusSubscribeToNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUBusSubscribeToNotificationViewController.m; sourceTree = "<group>"; };
+		049A91681CAF113D0095BA5F /* RUBusSubscribeToNotificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RUBusSubscribeToNotificationViewController.xib; sourceTree = "<group>"; };
 		04A1EFC51A5C508300DE0351 /* RUPredictionsBodyRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUPredictionsBodyRow.h; sourceTree = "<group>"; };
 		04A1EFC61A5C508300DE0351 /* RUPredictionsBodyRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUPredictionsBodyRow.m; sourceTree = "<group>"; };
 		04A1EFC71A5C508300DE0351 /* RUPredictionsBodyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUPredictionsBodyTableViewCell.h; sourceTree = "<group>"; };
@@ -367,8 +371,6 @@
 		04D0856B1B2798E90009E78F /* RUSOCSearchOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSOCSearchOperation.m; sourceTree = "<group>"; };
 		04DE78F01B6C13D700B06B6F /* RUUIWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUUIWebViewController.h; sourceTree = "<group>"; };
 		04DE78F11B6C13D700B06B6F /* RUUIWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUUIWebViewController.m; sourceTree = "<group>"; };
-		04E3D3FD1CADD3DE00406625 /* RUBusSubscribeToNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUBusSubscribeToNotificationViewController.h; sourceTree = "<group>"; };
-		04E3D3FE1CADD3DE00406625 /* RUBusSubscribeToNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUBusSubscribeToNotificationViewController.m; sourceTree = "<group>"; };
 		2127C0710965413FBE553ECA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FAAF2D92E8DF9C54DCB3A3F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A704909F19478CB2003B99DC /* RUSportsRosterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSportsRosterViewController.h; sourceTree = "<group>"; };
@@ -799,8 +801,9 @@
 				04A1EFF71A5C50B700DE0351 /* RUBusViewController.m */,
 				04A1EFD11A5C508300DE0351 /* RUPredictionsViewController.h */,
 				04A1EFD21A5C508300DE0351 /* RUPredictionsViewController.m */,
-				04E3D3FD1CADD3DE00406625 /* RUBusSubscribeToNotificationViewController.h */,
-				04E3D3FE1CADD3DE00406625 /* RUBusSubscribeToNotificationViewController.m */,
+				049A91661CAF113D0095BA5F /* RUBusSubscribeToNotificationViewController.h */,
+				049A91671CAF113D0095BA5F /* RUBusSubscribeToNotificationViewController.m */,
+				049A91681CAF113D0095BA5F /* RUBusSubscribeToNotificationViewController.xib */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -1763,6 +1766,7 @@
 				04AEDE3919D32FC000A20D1E /* rutgerscopyright@2x.png in Resources */,
 				C262EFB6188345D10035C8F5 /* InfoPlist.strings in Resources */,
 				04203AF71B15147E005A7099 /* ordered_content.json in Resources */,
+				049A916A1CAF113D0095BA5F /* RUBusSubscribeToNotificationViewController.xib in Resources */,
 				04AEDE3A19D32FC000A20D1E /* rutgerslogo@2x.png in Resources */,
 				C262EFBE188345D10035C8F5 /* Images.xcassets in Resources */,
 				047C2EF21A646FCC00B172E5 /* RUInfo.json in Resources */,
@@ -1947,7 +1951,7 @@
 				0401C4E51B39E5680053B10B /* NSDictionary+DiningHall.m in Sources */,
 				04A6561D1C502F1E0024B1F0 /* RUFavoritesDataSource.m in Sources */,
 				046555F21C3C581D00CAF833 /* NSURL+RUAdditions.m in Sources */,
-				04E3D3FF1CADD3DE00406625 /* RUBusSubscribeToNotificationViewController.m in Sources */,
+				049A91691CAF113D0095BA5F /* RUBusSubscribeToNotificationViewController.m in Sources */,
 				041502321BB0964A00D23AB8 /* RUDefines.m in Sources */,
 				04A1EFEB1A5C509600DE0351 /* AllStopsDataSource.m in Sources */,
 				A777C2AD190AF0DA00F978D7 /* RUPlacesViewController.m in Sources */,

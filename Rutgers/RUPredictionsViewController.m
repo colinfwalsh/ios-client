@@ -21,6 +21,7 @@
 @property (nonatomic) MSWeakTimer *timer;
 @property (nonatomic) id item;
 @property (nonatomic) id serializedItem;
+@property (strong, nonatomic) RUBusSubscribeToNotificationViewController *subscribeToNotificationViewController;
 @end
 
 @implementation RUPredictionsViewController
@@ -69,7 +70,10 @@
         NSLog(@"%ld\t%\ld", arrival.minutes, arrival.seconds);
     }
     
-
+    self.subscribeToNotificationViewController = [[RUBusSubscribeToNotificationViewController alloc] initWithNibName:@"RUBusSubscribeToNotificationViewController" bundle:[NSBundle mainBundle] busStopName:busStopName busName:@"A" arrivalTimes:busStopArrivals];
+    self.subscribeToNotificationViewController.modalTransitionStyle = UIModalPresentationPopover;
+    
+    [self presentViewController:self.subscribeToNotificationViewController animated:YES completion:nil];
     
     NSLog(@"VIEW SELECTED\t%@", [self.dataSource itemAtIndexPath:indexPath]);
 }

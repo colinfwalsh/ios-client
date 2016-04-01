@@ -14,6 +14,8 @@
 #import "RUBusRoute.h"
 #import "RUBusPrediction.h"
 
+#import "RUBusSubscribeToNotificationViewController.h"
+
 @interface RUPredictionsViewController : ExpandingTableViewController
 /**
  *  The predictions view controller is initialized with an item to display.

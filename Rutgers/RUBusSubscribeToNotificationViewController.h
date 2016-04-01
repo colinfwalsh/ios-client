@@ -2,7 +2,7 @@
 //  RUBusSubscribeToNotificationViewController.h
 //  Rutgers
 //
-//  Created by Open Systems Solutions on 3/31/16.
+//  Created by Open Systems Solutions on 4/1/16.
 //  Copyright © 2016 Rutgers. All rights reserved.
 //
 
@@ -10,8 +10,8 @@
 
 #import "RUBusArrival.h"
 
-@interface RUBusSubscribeToNotificationViewController : UIViewController
+@interface RUBusSubscribeToNotificationViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
-- (instancetype) initWithBusStopName:(NSString*)busStopName busArrivals:(NSArray*)busArrivals;
+- (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil busStopName:(NSString*)busStopName busName:(NSString*)busName arrivalTimes:(NSArray*)arrivalTimes;
 
 @end
